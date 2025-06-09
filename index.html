@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zahlenspiel</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="startScreen">
+    <h2>Spiel starten</h2>
+    <label for="playerCount">Menschliche Spieler:</label>
+    <input type="number" id="playerCount" min="1" max="8" value="2"/>
+    <div id="nameInputs"></div>
+    <label style="display: block; margin-top: 15px;">
+      <input type="checkbox" id="activateBotCheckbox"> Bot-Gegner ("Bot Kevin") aktivieren?
+    </label>
+    <button onclick="startGame()">Spiel starten</button>
+  </div>
+
+  <div id="roundScreen" class="hidden">
+    <h2 id="categoryDisplay"></h2>
+    <p id="personDisplay"></p>
+    <button onclick="showInputScreen()">Weiter</button>
+  </div>
+
+  <div id="inputScreen" class="hidden">
+    <h3>Welche Zahl wird gesucht?</h3>
+    <input type="number" id="mainNumber" placeholder="Zielzahl" oninput="updateDiffs()"/>
+    <div id="botGuessDisplayArea" style="margin: 10px 0; padding: 8px; background-color: #f0f0f0; border-radius: 4px; display: none;">
+      <!-- Bot's guess will be shown here -->
+    </div>
+
+    <div class="input-pair">
+      <input type="number" id="leftNumber" placeholder="Linke Zahl" oninput="updateDiffs()"/>
+      <input type="number" id="rightNumber" placeholder="Rechte Zahl" oninput="updateDiffs()"/>
+    </div>
+
+    <p>Diff Links: <span id="diffLeft">-</span></p>
+    <p>Diff Rechts: <span id="diffRight">-</span></p>
+
+    <button onclick="showPointsScreen()">Zur Punktevergabe</button>
+  </div>
+
+  <div id="pointsScreen" class="hidden">
+    <h2>Punkteübersicht & Vergabe</h2>
+    <div id="playerScoresContainer">
+      <!-- Player scores will be dynamically inserted here by script.js -->
+    </div>
+    <button onclick="nextRound()">Nächste Runde</button>
+  </div>
+
+  <div id="endScreen" class="hidden">
+    <h2>Spiel beendet!</h2>
+    <div id="ranking"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

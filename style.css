@@ -1,0 +1,173 @@
+/* General Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
+  text-align: center;
+  padding: 20px;
+  background-color: #F0F4F8; /* Light, clean background */
+  color: #333; /* Dark gray text for readability */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Screen Container Styling */
+div[id$="Screen"], div#nameInputs { /* Target all screen divs and nameInputs */
+  background-color: #FFFFFF; /* White background for content areas */
+  padding: 25px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 600px; /* Max width for larger screens */
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  color: #2c3e50; /* Darker blue for headings */
+  margin-top: 0;
+}
+
+/* Button Styling */
+button {
+  background-color: #4A90E2; /* Vibrant blue */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #357ABD; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+  transform: translateY(0px); /* Click effect */
+}
+
+/* Input Field Styling */
+input[type="number"], input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  margin: 5px 0 15px 0; /* Spacing around inputs */
+  width: calc(100% - 22px); /* Adjust width considering padding and border */
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Specific Screen Elements */
+#nameInputs input[type="text"] {
+  width: calc(80% - 22px); /* Slightly narrower for name inputs */
+  margin-bottom: 10px;
+}
+
+.input-pair {
+  display: flex;
+  justify-content: space-around; /* Better spacing for pairs */
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.input-pair input[type="number"] {
+  width: 45%; /* Adjust width for paired inputs */
+}
+
+/* Points Screen Specific Styling */
+#playerScoresContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between player entries */
+}
+
+.player-score-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute elements nicely */
+  padding: 12px;
+  background-color: #E9EFF5; /* Slightly different background for each entry */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.player-name-display {
+  font-weight: bold;
+  color: #2c3e50;
+  flex-grow: 1; /* Allow name to take available space */
+  text-align: left;
+  margin-left: 10px;
+}
+
+.player-score-value {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4A90E2; /* Blue for score */
+  min-width: 30px; /* Ensure space for score */
+  text-align: center;
+}
+
+.score-adjust-btn {
+  background-color: #50E3C2; /* Default Teal/green for +/- buttons, will be overridden */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Circular buttons */
+  width: 35px;
+  height: 35px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  padding: 0; /* Remove default padding */
+  margin: 0 5px; /* Small margin around buttons */
+}
+
+.score-adjust-btn:hover {
+  transform: scale(1.1);
+}
+
+.score-adjust-btn.minus-btn {
+  background-color: #E74C3C; /* Red for minus */
+}
+.score-adjust-btn.minus-btn:hover {
+  background-color: #C0392B; /* Darker red */
+}
+
+.score-adjust-btn.plus-btn {
+  background-color: #2ECC71; /* Green for plus */
+}
+.score-adjust-btn.plus-btn:hover {
+  background-color: #27AE60; /* Darker green */
+}
+
+
+/* Hidden Class */
+.hidden {
+  display: none !important; /* Ensure it overrides other display properties */
+}
+
+/* Ranking Display */
+#ranking p {
+  font-size: 1.1em;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+#ranking p:last-child {
+  border-bottom: none;
+}
