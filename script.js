@@ -19,7 +19,8 @@ const categoriesData = {
       { name: "Landon Donovan", value: 13.0 }, { name: "Felix Kroos", value: 80.0 }, { name: "Petri Pasanen", value: 144.0 },
       { name: "Javier Pinola", value: 203.0 }, { name: "Tranquilo Barnetta", value: 260.0 }, { name: "Jaroslav Drobny", value: 202.0 },
       { name: "Karim Matmour", value: 101.0 }, { name: "Logan Bailly", value: 61.0 }, { name: "Koen Casteels", value: 283.0 },
-      { name: "Felix Wiedwald", value: 73.0 }, { name: "Jefferson Farfan", value: 170.0 }, { name: "Joel Matip", value: 194.0 }
+      { name: "Felix Wiedwald", value: 73.0 }, { name: "Jefferson Farfan", value: 170.0 }, { name: "Joel Matip", value: 194.0 },
+    { name: "Jan Kirchhoff", value: 80.0 }
     ],
   
   "Bundesliga-Tore wie": [
@@ -65,7 +66,7 @@ const categoriesData = {
     { name: "Breno", value: 27.0 }, { name: "Pedro Geromel", value: 131.0 }, { name: "Vedad Ibisevic", value: 81.0 },
     { name: "Martin Hinteregger", value: 85.0 }, { name: "Felix Kroos", value: 72.0 }, { name: "Petri Pasanen", value: 47.0 },
     { name: "Teemu Pukki", value: 32.0 }, { name: "Javier Pinola", value: 157.0 }, { name: "Tranquilo Barnetta", value: 67.0 },
-    { name: "Zlatan Ibrahimović", value: 126.0 }
+    { name: "Zlatan Ibrahimović", value: 126.0 }, { name: "Jan Kirchhoff", value: 33.0 }
   ],
 
   "Generierte Transfersablösen wie": [
