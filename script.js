@@ -20,7 +20,12 @@ const categoriesData = {
       { name: "Javier Pinola", value: 203.0 }, { name: "Tranquilo Barnetta", value: 260.0 }, { name: "Jaroslav Drobny", value: 202.0 },
       { name: "Karim Matmour", value: 101.0 }, { name: "Logan Bailly", value: 61.0 }, { name: "Koen Casteels", value: 283.0 },
       { name: "Felix Wiedwald", value: 73.0 }, { name: "Jefferson Farfan", value: 170.0 }, { name: "Joel Matip", value: 194.0 },
-    { name: "Jan Kirchhoff", value: 80.0 }
+    { name: "Jan Kirchhoff", value: 80.0 }, { name: "Sami Hyypiä", value: 53 }, { name: "Hans Sarpei", value: 190 }, { name: "Lars Bender", value: 256 }, { name: "Gonzalo Castro", value: 421 },
+  { name: "Renato Augusto", value: 101 }, { name: "Arturo Vidal", value: 196 }, { name: "Patrick Owomoyela", value: 156 }, { name: "Diego", value: 161 },
+  { name: "Ivan Klasnic", value: 154 }, { name: "Aaron Hunt", value: 304 }, { name: "Marko Marin", value: 124 }, { name: "Philipp Tschauner", value: 34 },
+  { name: "Ádám Szalai", value: 276 }, { name: "Altin Lala", value: 181 }, { name: "Lars Stindl", value: 376 }, { name: "André Hahn", value: 250 },
+  { name: "Patrick Rakovsky", value: 8 }, { name: "Kasey Keller", value: 78 }, { name: "Konstantin Rausch", value: 246 }, { name: "Tom Starke", value: 101 },
+  { name: "Oka Nikolov", value: 229 }, { name: "Alexander Manninger", value: 36 }, { name: "Wolfgang Hesl", value: 20 }
     ],
   
   "Bundesliga-Tore wie": [
@@ -35,7 +40,9 @@ const categoriesData = {
     { name: "Sandro Wagner", value: 44.0 }, { name: "Marko Pantelic", value: 44.0 }, { name: "Toni Kroos", value: 23.0 },
     { name: "Nils Petersen", value: 89.0 }, { name: "Mohamadou Idrissou", value: 27.0 }, { name: "Vedad Ibisevic", value: 127.0 },
     { name: "Martin Hinteregger", value: 17.0 }, { name: "Tranquilo Barnetta", value: 29.0 }, { name: "Halil Altintop", value: 67.0 },
-    { name: "Jefferson Farfan", value: 39.0 }
+    { name: "Jefferson Farfan", value: 39.0 }, { name: "Lars Bender", value: 22 }, { name: "Gonzalo Castro", value: 38 }, { name: "Renato Augusto", value: 9 }, { name: "Arturo Vidal", value: 29 },
+  { name: "Diego", value: 57 }, { name: "Konstantin Rausch", value: 13 }, { name: "Ivan Klasnic", value: 50 }, { name: "Aaron Hunt", value: 56 },
+  { name: "Marko Marin", value: 12 }, { name: "Ádám Szalai", value: 54 }, { name: "Lars Stindl", value: 85 }, { name: "André Hahn", value: 49 }
   ],
 
 "Länderspiel-Einsätze wie": [
@@ -52,7 +59,10 @@ const categoriesData = {
   { name: "Mohamadou Idrissou", value: 39.0 }, { name: "Luis Suarez", value: 143.0 }, { name: "Dani Alves", value: 126.0 },
   { name: "Dani Carvajal", value: 51.0 }, { name: "Martin Hinteregger", value: 67.0 }, { name: "Karim Benzema", value: 97.0 },
   { name: "Petri Pasanen", value: 78.0 }, { name: "Teemu Pukki", value: 129.0 }, { name: "Tranquilo Barnetta", value: 75.0 },
-  { name: "Karim Matmour", value: 30.0 }, { name: "Zlatan Ibrahimović", value: 122.0 }, { name: "Koen Casteels", value: 20.0 }
+  { name: "Karim Matmour", value: 30.0 }, { name: "Zlatan Ibrahimović", value: 122.0 }, { name: "Koen Casteels", value: 20.0 },
+{ name: "Sami Hyypiä", value: 105 }, { name: "Hans Sarpei", value: 39 }, { name: "Lars Bender", value: 19 }, { name: "Gonzalo Castro", value: 5 },
+  { name: "Renato Augusto", value: 33 }, { name: "Patrick Owomoyela", value: 11 }, { name: "Diego", value: 34 }, { name: "Ivan Klasnic", value: 41 },
+  { name: "Marko Marin", value: 16 }, { name: "Ádám Szalai", value: 86 }, { name: "Altin Lala", value: 79 }, { name: "Lars Stindl", value: 11 }
 ],
 
 "Gelbe Karten im Herrenbereich wie": [
@@ -66,7 +76,8 @@ const categoriesData = {
     { name: "Breno", value: 27.0 }, { name: "Pedro Geromel", value: 131.0 }, { name: "Vedad Ibisevic", value: 81.0 },
     { name: "Martin Hinteregger", value: 85.0 }, { name: "Felix Kroos", value: 72.0 }, { name: "Petri Pasanen", value: 47.0 },
     { name: "Teemu Pukki", value: 32.0 }, { name: "Javier Pinola", value: 157.0 }, { name: "Tranquilo Barnetta", value: 67.0 },
-    { name: "Zlatan Ibrahimović", value: 126.0 }, { name: "Jan Kirchhoff", value: 33.0 }
+    { name: "Zlatan Ibrahimović", value: 126.0 }, { name: "Jan Kirchhoff", value: 33.0 }, { name: "Hans Sarpei", value: 40 }, { name: "Lars Bender", value: 62 }, { name: "Gonzalo Castro", value: 117 }, { name: "Arturo Vidal", value: 203 },
+  { name: "Patrick Owomoyela", value: 30 }, { name: "Aaron Hunt", value: 57 }, { name: "Altin Lala", value: 81 }, { name: "André Hahn", value: 69 }
   ],
 
   "Generierte Transfersablösen wie": [
@@ -77,7 +88,8 @@ const categoriesData = {
     { name: "Didier Drogba", value: 44.6 }, { name: "Thiago Alcantara", value: 47.0 }, { name: "Sandro Wagner", value: 21.7 },
     { name: "Toni Kroos", value: 27.3 }, { name: "Javi Martinez", value: 46.0 }, { name: "Luis Suarez", value: 125.52 },
     { name: "Dani Alves", value: 36.55 }, { name: "Karim Benzema", value: 35.0 }, { name: "Cristiano Ronaldo", value: 247.0 },
-    { name: "Zlatan Ibrahimović", value: 169.1 }
+    { name: "Zlatan Ibrahimović", value: 169.1 }, { name: "Sami Hyypiä", value: 3.9 }, { name: "Gonzalo Castro", value: 16.0 }, { name: "Renato Augusto", value: 19.9 }, { name: "Diego", value: 57.0 },
+  { name: "Marko Marin", value: 22.17 }
   ],
 
 "Bundesliga-Einsätze zu Null wie": [
@@ -88,7 +100,8 @@ const categoriesData = {
     { name: "Jens Lehmann", value: 131.0 }, { name: "Marc-André ter Stegen", value: 36.0 }, { name: "Frank Rost", value: 121.0 },
     { name: "René Adler", value: 69.0 }, { name: "Jarsolav Drobny", value: 58.0 }, { name: "Logan Bailly", value: 10.0 },
     { name: "Koen Casteels", value: 80.0 }, { name: "Yann Sommer", value: 77.0 }, { name: "Marwin Hitz", value: 58.0 },
-    { name: "Felix Wiedwald", value: 9.0 }
+    { name: "Felix Wiedwald", value: 9.0 },   { name: "Philipp Tschauner", value: 6 }, { name: "Kasey Keller", value: 21 }, { name: "Oka Nikolov", value: 51 }, { name: "Tom Starke", value: 28 },
+  { name: "Alexander Manninger", value: 5 }, { name: "Wolfgang Hesl", value: 7 }
   ]
 };
 
